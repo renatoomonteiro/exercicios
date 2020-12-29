@@ -1,0 +1,178 @@
+package fundamentos;
+import java.util.*;
+class Console {
+  public static void main(String[] args) {
+    System.out.print("Bom");
+    System.out.print(" dia!\n\n");
+
+    System.out.println("Bom");
+    System.out.println("dia!");
+
+    System.out.printf("Megasena: %d %d %d %d %d %d %n", 1, 2, 3, 4, 5, 6);
+    System.out.printf("Salário: %.1f%n", 1234.5678 );
+    System.out.printf("Nome: %s%n", "João");
+
+    int a = 3;
+
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Digite o seu nome: ");
+    String nome = entrada.nextLine();
+    
+    System.out.print("Digite o seu sobrenome: ");
+    String sobrenome = entrada.nextLine();
+    
+    System.out.print("Digite a sua idade: ");
+    int idade = entrada.nextInt();
+        
+    System.out.printf("%s %s tem %d anos de idade.%n", 
+                       nome, sobrenome,idade);
+    entrada.close();  
+   }
+}
+
+
+#####
+
+package fundamentos;
+
+
+class ConversaoNumeroString {
+  public static void main(String[] args) {
+    
+  Integer num1 = 10000;
+    System.out.println(num1.toString().length());
+    
+    int num2 = 100000;
+    System.out.println(Integer.toString(num2));
+    
+     
+    System.out.println(("" + num1).length());
+    System.out.println(("" + num2).length());
+    
+  }
+}
+
+####
+
+package fundamentos;
+
+
+class ConversaoTipoPrimitivoNumerico {
+  public static void main(String[] args) {
+    
+   double a = 1; // Conversão implícita de double para int
+   System.out.println(a);
+    
+   //float b = 1.0F; // Tornando o literal em float com o aletra F no final do número
+   
+    float b = (float) 1.123456788888; // Conversão explícita (CAST)
+    System.out.println(b); 
+    
+    int c = 340;
+    byte d = (byte) c; // Converte antes de armazenar em c
+    System.out.println(d);
+    
+    double e = 1.999999;
+    int f = (int) e;
+    System.out.println(f);
+    
+  }
+}
+
+####
+
+
+package fundamentos;
+
+
+class PrimitivoVsObjeto {
+  public static void main(String[] args) {
+    
+    String s = "texto";
+    // String s = new String("texto"); forma menos usual para editar string
+    s.toUpperCase();
+    //Wrappers = versão objeto de tipos primitivos
+    int a = 123;
+    System.out.println(a);
+    
+  }
+}
+
+
+#####
+
+package fundamentos;
+import java.util.*;
+
+class Wrapper {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    //byte
+    Byte b = 100;
+    Short s = 1000;
+    
+    
+    //Integer i = Integer.parseInt(entrada.next()); // int
+    Integer i = 10000; // int
+    long l = 100000L;
+    
+        
+    System.out.println(b.byteValue());
+    System.out.println(s.toString());
+    System.out.println(i*3);
+    System.out.println(l/3);
+    
+    //Float
+    
+    float f = 123.0F;
+    System.out.println(f);
+    
+    //Double
+    
+    Double d = 1234.5678;
+    System.out.println(d);
+    
+    Boolean bo = Boolean.parseBoolean("true");
+    System.out.println(bo);
+    System.out.println(bo.toString().toUpperCase());
+    
+    //Character
+    
+    Character c = '#';
+    System.out.println(c + "...");
+        
+    
+    entrada.close();
+        
+  }
+}
+
+
+#####
+
+package fundamentos;
+import javax.swing.JOptionPane;
+
+class ConversaoStringNumero {
+  public static void main(String[] args) {
+    
+  String valor1 = JOptionPane.showInputDialog(
+    	"Digite o primeiro número: ");
+  String valor2 = JOptionPane.showInputDialog(
+    	"Digite o segundo número: ");
+      System.out.println(valor1+valor2);
+   double numero1 = Double.parseDouble(valor1);
+    double numero2 = Double.parseDouble(valor2);
+    
+    double soma = numero1+numero2;
+    System.out.println("A soma é " + soma);
+    System.out.println("A média é " + soma/2);
+    
+    
+  }
+}
+
+
+
+
