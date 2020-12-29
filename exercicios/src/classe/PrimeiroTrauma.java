@@ -12,5 +12,6 @@ public class PrimeiroTrauma {
 		System.out.println(p.a); //Pode mexer aqui
 		//Pode mexer aqui
 		System.out.println(b);
+		//Teste Git Hub
 	}
 }
