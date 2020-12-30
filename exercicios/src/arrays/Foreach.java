@@ -7,7 +7,7 @@ public class Foreach {
 		for (int i = 0; i < notas.length; i++) {
 			System.out.print(notas[i]+ " ");
 		}
-
+//
 		System.out.println();
 
 		for (double nota:notas) {

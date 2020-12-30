@@ -8,7 +8,7 @@ public class Exercicio {
 
 		double[] notasAlunoA = new double[4];
 		System.out.println(Arrays.toString(notasAlunoA));
-
+       //teste
 		notasAlunoA[0]=7.9;
 		notasAlunoA[1]=8;
 		notasAlunoA[2]=6.7;
