@@ -9,7 +9,7 @@ public class Foreach {
 		}
 //
 		System.out.println();
-//
+//f
 		for (double nota:notas) {
 			System.out.print(nota+" ");
 		}
