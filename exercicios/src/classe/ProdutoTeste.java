@@ -8,8 +8,8 @@ public class ProdutoTeste {
 		p1.nome = "Notebook"; // Variáveis da classe Produto, dentro do mesmo pacote, utilizar a notação .
 		p1.preco = 4356.89;
 		p1.desconto = 0.25;
-
-		var p2 = new Produto();
+//
+		Produto p2 = new Produto();
 		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
 		p2.desconto = 0.29;

@@ -4,7 +4,7 @@ public class Jantar {
 
 	public static void main(String[] args) {
 
-		double pComida, pPessoa;
+		//double pComida, pPessoa;
 		
 		Pessoa p1 = new Pessoa();
 		p1.nomePessoa = "Renato";
