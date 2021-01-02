@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matriz {
@@ -15,9 +16,9 @@ public class Matriz {
 		int qtdeNotas = entrada.nextInt();
 
 		double [][] notasDaTurma = new double[qtdeAlunos][qtdeNotas];
-        double total=0;
+		double total=0;
 
-		
+
 		for (int a = 0; a < notasDaTurma.length; a++) {
 			for (int n = 0; n < notasDaTurma[a].length; n++) {
 
@@ -29,10 +30,12 @@ public class Matriz {
 		}
 
 		double media = total / (qtdeAlunos*qtdeNotas);
-				System.out.printf("Média da turma é %.2f" , media);
-
-		entrada.close();
+		System.out.printf("Média da turma é %.2f \n2" , media);
 		
+		for (double[] notasDoAluno: notasDaTurma) {
+			System.out.println(Arrays.toString(notasDoAluno));			
+		}
+		entrada.close();
 	}
 
 }
