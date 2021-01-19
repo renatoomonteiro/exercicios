@@ -32,7 +32,7 @@ public class ConjuntoBaguncado {
 		System.out.println(conjunto.contains(true));
 
 		Set nums = new HashSet(); // Set = variável que recebe um objeto. 
-
+ 
 		nums.add(1);
 		nums.add(2);
 		nums.add(3);
