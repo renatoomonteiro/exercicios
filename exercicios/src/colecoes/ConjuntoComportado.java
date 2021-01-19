@@ -11,7 +11,7 @@ public class ConjuntoComportado {
 		lista.add("Ana");
 		lista.add("Carlos");
 		lista.add("Luca");
-		lista.add("Pedro");
+		lista.add("Pedro"); 
 		
 		
 		
