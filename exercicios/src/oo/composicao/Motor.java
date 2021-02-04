@@ -4,20 +4,20 @@ public class Motor {
 
 	//boolean ligado = false;
 	
-	Carro carro;
-	double fatorInjecao = 1;
-	public boolean ligado= false;
+	Carro carro; // Variável carro recebe a referência da classe Carro
+	double fatorInjecao = 1; // Variável fatorInjecao, inicializada com 1, indicará se o carro está acelerando, freando ou parado.
+	public boolean ligado= false; // Variável ligado, inicializada com false, irá informar se o carro está ou não ligado
 	
-	Motor(Carro carro){
-		this.carro = carro;
+	Motor(Carro carro){ // Classe Motor, recebendo a variável carro, que aponta para a classe Carro
+		this.carro = carro; // Variável carro, criada na classe Motor, será igual a variável carro, que aponta para a classe Carro
 	}
 	
-	int giros() {
+	int giros()  {// Método giros, do tipo int, será o responsável por verificar o status da variável ligado.
 
-		if(!ligado) {
-			return 0;
-		} else {
-			return (int) Math.round(fatorInjecao*3000);
-		}
+		if(!ligado) { // Se não estiver ligado
+			return 0; // Retornará 0.
+		} else { // senão
+			return (int) Math.round(fatorInjecao*3000); // Retornará um inteiro que será a multiplicação do fatorInjecao por 3000, 
+		}												// Que será o RPM
 	}
 }
