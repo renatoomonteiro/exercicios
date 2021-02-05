@@ -3,8 +3,9 @@ package oo.composicao;
 public class Carro {
 	final Motor motor; // Variável motor irá apontar 
 					   // para a classe Motor
-	
-	Carro(){
+
+	//Método Carro, que receberá um objeto do tipo motor, que apontará para a classe Motor.
+	Carro(){ // Isso fará com que um Carro tenha um Motor
 		this.motor = new Motor(this); // Instanciando um novo motor,
 	}                                // através da classe Motor, 
 									//na classe Carro
