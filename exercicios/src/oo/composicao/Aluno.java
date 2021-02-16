@@ -15,9 +15,9 @@ public class Aluno {
 		//que também é uma variável nome 
 	}
 
-	void adicionarCurso(Curso curso) {
-		this.cursos.add(curso);
-		curso.alunos.add(this);
+	void adicionarCurso(Curso curso) { //Método adicionarCurso, receberá a variável curso que apontará para a classe Curso 
+		this.cursos.add(curso); // Adicionando uma lista cursos na variável curso
+		curso.alunos.add(this); // Adicionando uma lidta de alunos ao curso
 	}
 
 	//Criando o método obterCursoPorNome, que apontará para a classe Curso, e recebe o parâmetro nome, 
