@@ -1,7 +1,7 @@
 package oo.heranca;
 
 public class Jogador {
-	int x, y; // Variáveis que identificarão a posição no tabuleiro
+	int x, y, vida=100; // Variáveis que identificarão a posição no tabuleiro e a vida começará com 100%
 
 	//	boolean andar(String direcao) {// Método que identificará se o jogador já andou ou não através da variável direcao
 	//		if ("norte".equalsIgnoreCase(direcao)) { // Se andou para o a direção: norte,
@@ -19,6 +19,22 @@ public class Jogador {
 	//		return true;
 	//	}
 
+	boolean atacar(Jogador oponente) { // Método atacar que irá receber um parâmetro oponente para calcular a distância entre os jogadores 
+		// O Jogador atual (this) está atacando o oponente 		
+		int deltaX = Math.abs(x-oponente.x); // Método absoluto, se é negativo ou positivo, não importa, exibirá apenas o valor
+		int deltaY = Math.abs(y-oponente.y); // lógica para calcular as coordenadas do jogador
+		
+		if(deltaX == 0 && deltaY == 1) { 
+		//Jogadores com o mesmo X, estarão na mesma coluna, e ao lado um do outro, na mesma linha, com o deltaY = 1	
+			oponente.vida-=10;
+			return true;
+		}else if(deltaX == 1 && deltaY == 0){// A diferença do eixo x é 0 e a do y é 1
+			oponente.vida-=10;
+			return true;
+		}else {
+			return false;
+		}
+	}	
 	// Método que receberá a classe de enumeração para comparar a direção
 	boolean andar(Direcao direcao) {// Método que identificará se o jogador já andou ou não através da variável direcao
 		switch(direcao) {
