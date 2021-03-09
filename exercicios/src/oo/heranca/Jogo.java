@@ -4,6 +4,7 @@ public class Jogo {
 
 	public static void main(String[] args) {
 		
+		// Teste de edição na classe Jogo
 		
 		//Monstro e Heroi são classes que herdam características da classe Jogador
 		//Classe pai -> Jogador
