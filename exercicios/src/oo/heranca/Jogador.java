@@ -3,6 +3,15 @@ package oo.heranca;
 public class Jogador {
 	int x, y, vida=100; // Variáveis que identificarão a posição no tabuleiro e a vida começará com 100%
 
+	Jogador(){ // Método construtor da classe pai, que não receberá parâmetro
+		this(0, 0); // Zeros são parâmetros inteiros do método Jogador 
+	}
+	
+	Jogador(int x, int y){ // Método construtor com dois parâmetros inteiros recebendo as variáveis x e y
+		this.x = x; // A variável x da classe Jogador cereberá o mesmo valor do parâmetro x do método Jogador
+		this.y = y; // A variável y da classe Jogador cereberá o mesmo valor do parâmetro y do método Jogador
+	}
+	
 	//	boolean andar(String direcao) {// Método que identificará se o jogador já andou ou não através da variável direcao
 	//		if ("norte".equalsIgnoreCase(direcao)) { // Se andou para o a direção: norte,
 	//			y++; //Incremente a variável y
