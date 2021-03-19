@@ -27,8 +27,6 @@ public class CarroTeste {
 		c2.acelerar();
 		System.out.println(c2);
 		
-		
-
 	}
 
 }
