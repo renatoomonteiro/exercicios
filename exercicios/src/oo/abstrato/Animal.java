@@ -1,8 +1,9 @@
 package oo.abstrato;
 
 public abstract class Animal {
+	
 	public String respirar() { // Método padrão que servirá para exibir
-		return "CO2"; // o CO2 emitido ao respirar.
+		return "Usando Oxigênio!"; // o CO2 emitido ao respirar.
 	}
 // Criação de método não abstrato
 //	public double mover() {

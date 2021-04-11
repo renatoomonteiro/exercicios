@@ -1,10 +1,15 @@
 package oo.abstrato;
 
-public abstract class Cachorro extends Mamifero{
+public class Cachorro extends Mamifero{
 	//Não precisa definir corpo de métodos abstratos em classes abstratas
+//	@Override
+//	public String mover() {
+//		return "Usando as patas";
+//	}
 
 	@Override
 	public String mamar() {
-		return null;
+		return "Usando leite";
 	}
+
 }
