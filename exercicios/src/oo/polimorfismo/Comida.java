@@ -1,6 +1,6 @@
 package oo.polimorfismo;
 //Classe que terá herança
-public class Comida {
+public abstract class Comida {
 	private double peso;
 
 	public Comida(double peso) {

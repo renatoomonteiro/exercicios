@@ -9,7 +9,8 @@ public class Jantar {
 
 		Feijao ingrediente2 = new Feijao(0.1);
 		
-		Comida ingrediente3 = new Comida(0.3);
+		Comida ingrediente3 = new Arroz(0.3);
+		// Comida passou a ser uma classe abstrata, logo, não poderá ser instanciada, apenas como tipo, nesse casso, Arroz
 
 		System.out.println(convidado.getPeso());
 
